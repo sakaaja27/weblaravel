@@ -1,0 +1,57 @@
+input[type="checkbox"]{
+  position: relative;
+  width: 40px;
+  height: 20px;
+  appearance: none;
+  background-color:tomato;
+  outline: none;
+  border-radius: 10px;
+  transition: .5s ease;
+  cursor: pointer;
+}
+input[type="checkbox"]:checked{
+ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+input[type="checkbox"]:before{
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: .5s ease;
+}
+input[type="checkbox"]:checked:before{
+  transform: translateX(20px);
+}
+.dark{
+  background:#062552;
+}
+.dark .card-header{
+  background-color:#5146AA;
+  color: #1C2653;
+}
+.dark .card-header h4{
+
+  color:#FFA9A5;
+}
+.dark .card-body {
+  background:#669BC3;
+}
+.dark h1{
+  color:#D7D7D7;
+}
+.dark p{
+  color:#D7D7D7;
+}
+.dark{
+  color:#D7D7D7;
+}
+.dark table{
+  color:#D7D7D7;
+}
+.navbar {
+  justify-content: space-between;
+}
